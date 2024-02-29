@@ -1,5 +1,5 @@
 ## Minecraft Safechat
-*Today we answer a question nobody asked for an answer to...*   
+*Today we answer a question nobody ever asked for an answer to...*   
 Remember Roblox's old safechat feature from 2007-2014?  
 <img src="https://raw.githubusercontent.com/TinyGamesCoding/MC-Safechat/master/readme_assets/1.png" width=300>  
 **What if it was in Minecraft?**  
