@@ -1,7 +1,7 @@
-package me.tinygames.robloxsafechat.config;
+package me.thosea.robloxsafechat.config;
 
-import me.tinygames.robloxsafechat.RobloxSafechat;
-import me.tinygames.robloxsafechat.element.ButtonElement;
+import me.thosea.robloxsafechat.RobloxSafechat;
+import me.thosea.robloxsafechat.element.ButtonElement;
 import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.network.chat.Component;
 

@@ -1,7 +1,7 @@
-package me.tinygames.robloxsafechat.config;
+package me.thosea.robloxsafechat.config;
 
-import me.tinygames.robloxsafechat.RobloxSafechat.Builderman;
-import me.tinygames.robloxsafechat.element.GroupElement;
+import me.thosea.robloxsafechat.RobloxSafechat.Builderman;
+import me.thosea.robloxsafechat.element.GroupElement;
 
 public final class DefaultChats {
 	private DefaultChats() {}

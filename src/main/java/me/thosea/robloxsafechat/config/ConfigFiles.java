@@ -1,4 +1,4 @@
-package me.tinygames.robloxsafechat.config;
+package me.thosea.robloxsafechat.config;
 
 import net.fabricmc.loader.api.FabricLoader;
 

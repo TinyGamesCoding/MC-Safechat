@@ -1,11 +1,11 @@
-package me.tinygames.robloxsafechat.element; // ooohoh ohhhh ohohh oh oh oh story of undertaleeeeeeeeeeeeee - tinygames
+package me.thosea.robloxsafechat.element; // ooohoh ohhhh ohohh oh oh oh story of undertaleeeeeeeeeeeeee - tinygames
 
 import com.google.common.collect.Lists;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import me.tinygames.robloxsafechat.RobloxSafechat;
-import me.tinygames.robloxsafechat.button.SCButton;
+import me.thosea.robloxsafechat.RobloxSafechat;
+import me.thosea.robloxsafechat.button.SCButton;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import org.jetbrains.annotations.Nullable;

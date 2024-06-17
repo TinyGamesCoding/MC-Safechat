@@ -1,4 +1,4 @@
-package me.tinygames.robloxsafechat.config;
+package me.thosea.robloxsafechat.config;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -7,8 +7,8 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonPrimitive;
 import com.google.gson.stream.JsonWriter;
-import me.tinygames.robloxsafechat.RobloxSafechat;
-import me.tinygames.robloxsafechat.element.GroupElement;
+import me.thosea.robloxsafechat.RobloxSafechat;
+import me.thosea.robloxsafechat.element.GroupElement;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
@@ -25,7 +25,7 @@ import java.io.OutputStreamWriter;
 import java.nio.file.Path;
 import java.util.function.Consumer;
 
-import static me.tinygames.robloxsafechat.RobloxSafechat.LOGGER;
+import static me.thosea.robloxsafechat.RobloxSafechat.LOGGER;
 
 public final class ConfigLoader {
 	private ConfigLoader() {}

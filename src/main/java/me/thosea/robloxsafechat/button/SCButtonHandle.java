@@ -1,7 +1,7 @@
-package me.tinygames.robloxsafechat.button;
+package me.thosea.robloxsafechat.button;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import me.tinygames.robloxsafechat.RobloxSafechat;
+import me.thosea.robloxsafechat.RobloxSafechat;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;

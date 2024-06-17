@@ -10,7 +10,7 @@
   "icon": "assets/robloxsafechat/icon.png",
   "entrypoints": {
     "client": [
-      "me.tinygames.robloxsafechat.RobloxSafechat"
+      "me.thosea.robloxsafechat.RobloxSafechat"
     ]
   },
   "environment": "client",

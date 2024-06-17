@@ -1,4 +1,4 @@
-package me.tinygames.robloxsafechat.element;
+package me.thosea.robloxsafechat.element;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;

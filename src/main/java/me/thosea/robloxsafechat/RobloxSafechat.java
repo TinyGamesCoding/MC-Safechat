@@ -1,10 +1,10 @@
-package me.tinygames.robloxsafechat;
+package me.thosea.robloxsafechat;
 
-import me.tinygames.robloxsafechat.button.SCButton;
-import me.tinygames.robloxsafechat.config.ConfigLoader;
-import me.tinygames.robloxsafechat.config.DefaultChats;
-import me.tinygames.robloxsafechat.element.ChatElement;
-import me.tinygames.robloxsafechat.element.GroupElement;
+import me.thosea.robloxsafechat.button.SCButton;
+import me.thosea.robloxsafechat.config.ConfigLoader;
+import me.thosea.robloxsafechat.config.DefaultChats;
+import me.thosea.robloxsafechat.element.ChatElement;
+import me.thosea.robloxsafechat.element.GroupElement;
 import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;

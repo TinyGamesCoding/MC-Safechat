@@ -1,6 +1,6 @@
-package me.tinygames.robloxsafechat.mixin;
+package me.thosea.robloxsafechat.mixin;
 
-import me.tinygames.robloxsafechat.config.ConfigLoader;
+import me.thosea.robloxsafechat.config.ConfigLoader;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import org.spongepowered.asm.mixin.Mixin;

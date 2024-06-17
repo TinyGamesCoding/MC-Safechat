@@ -1,4 +1,4 @@
-package me.tinygames.robloxsafechat.mixin;
+package me.thosea.robloxsafechat.mixin;
 
 import net.minecraft.client.gui.screens.ChatScreen;
 import org.spongepowered.asm.mixin.Mixin;

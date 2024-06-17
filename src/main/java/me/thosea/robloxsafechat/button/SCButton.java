@@ -1,6 +1,6 @@
-package me.tinygames.robloxsafechat.button;
+package me.thosea.robloxsafechat.button;
 
-import me.tinygames.robloxsafechat.RobloxSafechat;
+import me.thosea.robloxsafechat.RobloxSafechat;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.network.chat.Component;

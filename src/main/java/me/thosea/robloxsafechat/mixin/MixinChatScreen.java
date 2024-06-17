@@ -1,8 +1,8 @@
-package me.tinygames.robloxsafechat.mixin;
+package me.thosea.robloxsafechat.mixin;
 
-import me.tinygames.robloxsafechat.RobloxSafechat;
-import me.tinygames.robloxsafechat.config.SettingsGroup;
-import me.tinygames.robloxsafechat.element.GroupElement;
+import me.thosea.robloxsafechat.RobloxSafechat;
+import me.thosea.robloxsafechat.config.SettingsGroup;
+import me.thosea.robloxsafechat.element.GroupElement;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.ComponentPath;
 import net.minecraft.client.gui.GuiGraphics;

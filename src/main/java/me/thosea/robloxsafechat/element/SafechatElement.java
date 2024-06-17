@@ -1,9 +1,9 @@
-package me.tinygames.robloxsafechat.element;
+package me.thosea.robloxsafechat.element;
 
 import com.google.gson.JsonElement;
-import me.tinygames.robloxsafechat.RobloxSafechat;
-import me.tinygames.robloxsafechat.button.SCButton;
-import me.tinygames.robloxsafechat.mixin.ChatScreenAccessor;
+import me.thosea.robloxsafechat.RobloxSafechat;
+import me.thosea.robloxsafechat.button.SCButton;
+import me.thosea.robloxsafechat.mixin.ChatScreenAccessor;
 import net.minecraft.client.Minecraft;
 import org.jetbrains.annotations.Nullable;
 

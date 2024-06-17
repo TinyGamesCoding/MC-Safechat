@@ -1,8 +1,8 @@
-package me.tinygames.robloxsafechat.element;
+package me.thosea.robloxsafechat.element;
 
 import com.google.gson.JsonElement;
-import me.tinygames.robloxsafechat.button.SCButton;
-import me.tinygames.robloxsafechat.config.ConfigLoader;
+import me.thosea.robloxsafechat.button.SCButton;
+import me.thosea.robloxsafechat.config.ConfigLoader;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.network.chat.Component;
 
