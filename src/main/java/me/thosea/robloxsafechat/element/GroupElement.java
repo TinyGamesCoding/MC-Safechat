@@ -6,6 +6,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import me.thosea.robloxsafechat.RobloxSafechat;
 import me.thosea.robloxsafechat.button.SCButton;
+import me.thosea.robloxsafechat.config.SafechatConfig;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import org.jetbrains.annotations.Nullable;
@@ -38,7 +39,7 @@ public class GroupElement implements SafechatElement {
 
 	protected Runnable makeAction() {
 		return () -> {
-			if(RobloxSafechat.GROUPS_ARE_ALSO_TEXTS) {
+			if(SafechatConfig.GROUPS_ARE_ALSO_TEXTS.get()) {
 				SEND_MESSAGE.accept(name);
 			}
 		};
@@ -48,7 +49,7 @@ public class GroupElement implements SafechatElement {
 		for(SafechatElement element : listView()) {
 			element.getButton().render(graphics, x, y, mouseX, mouseY);
 
-			if(element instanceof GroupElement subgroup && subgroup.shouldShow(mouseX, mouseY)) {
+			if(element instanceof GroupElement subgroup && subgroup.shouldShow(graphics, mouseX, mouseY)) {
 				subgroup.renderGroup(graphics,
 						x - SCButton.WIDTH,
 						getSubgroupY(y, subgroup),
@@ -87,11 +88,11 @@ public class GroupElement implements SafechatElement {
 	}
 
 	@Override
-	public boolean mouseClicked(int mouseX, int mouseY, int clickType) {
-		if(!shouldShow(mouseX, mouseY)) return false;
+	public boolean mouseClicked(GuiGraphics graphics, int mouseX, int mouseY, int clickType) {
+		if(!shouldShow(graphics, mouseX, mouseY)) return false;
 
 		for(SafechatElement element : listView()) {
-			if(element.mouseClicked(mouseX, mouseY, clickType)) {
+			if(element.mouseClicked(graphics, mouseX, mouseY, clickType)) {
 				return true;
 			}
 		}
@@ -100,7 +101,7 @@ public class GroupElement implements SafechatElement {
 	}
 
 	@Override
-	public boolean shouldShow(int mouseX, int mouseY) {
+	public boolean shouldShow(GuiGraphics graphics, int mouseX, int mouseY) {
 		if(parent == null) {
 			show = true;
 			return true;
@@ -109,12 +110,12 @@ public class GroupElement implements SafechatElement {
 			return false;
 		}
 
-		if(button != null && button.isHovered(mouseX, mouseY)) {
+		if(button != null && button.isHovered(graphics, mouseX, mouseY)) {
 			show = true;
 			return true;
 		} else {
 			for(SafechatElement element : listView()) {
-				if(element.shouldShow(mouseX, mouseY)) {
+				if(element.shouldShow(graphics, mouseX, mouseY)) {
 					return true;
 				}
 			}
@@ -125,7 +126,7 @@ public class GroupElement implements SafechatElement {
 	}
 
 	protected List<SafechatElement> listView() {
-		return RobloxSafechat.FLIP_GROUPS ? reversed : list;
+		return SafechatConfig.FLIP_GROUPS.get() ? reversed : list;
 	}
 
 	@Override

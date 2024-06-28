@@ -1,7 +1,7 @@
 package me.thosea.robloxsafechat.button;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import me.thosea.robloxsafechat.RobloxSafechat;
+import me.thosea.robloxsafechat.config.SafechatConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
@@ -58,16 +58,16 @@ final class SCButtonHandle extends Button {
 			scale = ((float) (SCButton.BASE_WIDTH - 4) / (float) textWidth);
 
 			if(!isSettingsButton) {
-				if(scale <= RobloxSafechat.MIN_TEXT_SCALE) {
+				if(scale <= SafechatConfig.TEXT_SCALE_THRESHOLD.get()) {
 					setTooltip(Tooltip.create(getMessage()));
 				} else {
 					setTooltip(null);
 				}
 			}
 
-			scale *= RobloxSafechat.getScale();
+			scale *= SafechatConfig.SCALE.get();
 		} else {
-			scale = RobloxSafechat.getScale();
+			scale = SafechatConfig.SCALE.get();
 		}
 
 		int scaledWidth = Mth.ceil(textWidth * scale);
@@ -77,9 +77,9 @@ final class SCButtonHandle extends Button {
 		// cause a slight offset in height (it goes UP)
 		int yOff = 5; // minimum of 5 for all scales
 
-		if(scale < RobloxSafechat.getScale()) {
+		if(scale < SafechatConfig.SCALE.get()) {
 			// increase if needed
-			yOff = (int) ((float) yOff * (RobloxSafechat.getScale() / scale) * 1.5);
+			yOff = (int) ((float) yOff * (SafechatConfig.SCALE.get() / scale) * 1.5);
 		}
 
 		this.renderY = (int) (getY() / scale) + yOff;

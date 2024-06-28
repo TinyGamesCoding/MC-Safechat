@@ -5,8 +5,10 @@
   "compatibilityLevel": "JAVA_17",
   "client": [
     "ChatScreenAccessor",
+    "EditBoxAccessor",
+    "IdentifierAccessor",
     "MixinChatScreen",
-    "MixinMinecraft"
+    "MixinClientPacketListener"
   ],
   "injectors": {
     "defaultRequire": 1
